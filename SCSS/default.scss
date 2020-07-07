@@ -1,0 +1,16 @@
+@import "./Utils/variables";
+@import "./Utils/mixins";
+
+@import "./Layouts/header";
+@import "./Layouts/footer";
+@import "./Layouts/main";
+@import "./Layouts/menus";
+@import "./Layouts/conteneurMenus";
+
+body{
+  display:flex;
+  flex-direction: column;
+  margin:auto;
+  box-sizing: border-box;
+  height: 100vh; /* A SUPPRIMER, utilisé pour mise en place */
+}

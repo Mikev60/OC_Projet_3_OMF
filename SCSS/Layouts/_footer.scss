@@ -1,0 +1,29 @@
+.footer {
+  background-color: $bckColor;
+  width: 100%;
+  margin-top: auto;
+  display:flex;
+  justify-content: space-evenly;
+  padding:1rem;
+  position: fixed;
+  bottom:0;
+  a {
+    color:$ftColor;
+    font-size: 1.5rem;
+    text-decoration: none;
+    &:hover {
+      animation: shakeLink 200ms;
+      animation-iteration-count: infinite;
+    }
+  }
+}
+
+/* Animation wiggle sur liens */
+@keyframes shakeLink {
+  25% {
+    transform: translateX(2%);
+  }
+  75% {
+    transform : translateX(2% * -1);
+  }
+}

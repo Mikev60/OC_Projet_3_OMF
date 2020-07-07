@@ -1,0 +1,55 @@
+/* A GARDER SI JAMAIS ON DOIT UTILISER LES MENUS REFAITS
+.menu1 {
+  @include menus;
+  background-color: #fcdfdb;
+  transition: transform 1s;
+  transform: scale(1);
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+.menu2 {
+  @include menus;
+  background-color: #faf0f9;
+}
+.menu3 {
+  @include menus;
+  background-color: #f9f9f9;
+}
+.menu4 {
+  @include menus;
+  background-color: white;
+}
+*/
+
+.menu img {
+  max-width: 15rem;
+  max-height: 19rem;
+  transform: scale(1);
+  transition: transform 1s;
+  box-shadow: 0 0 0.7em grey;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.conteneurMenu {
+  a {
+    color: $ftColor;
+    text-decoration: none;
+    transform: scale(1);
+    transition:transform 1s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &__conteneurLien {
+    background-color: $bckColor;
+    width: 18rem;
+    height: 3rem;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    border-radius: 0.4rem;
+    text-align: center;
+  }
+}

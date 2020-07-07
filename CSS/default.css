@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* @mixin menus {
+  width: 20%;
+  height: 17rem;
+  box-shadow: 0 0 1em grey;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+.header {
+  background-color: #579c87;
+  width: 100%; }
+  .header h1 {
+    color: #fbc945;
+    font-size: 2rem;
+    text-align: center; }
+
+.footer {
+  background-color: #579c87;
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0; }
+  .footer a {
+    color: #fbc945;
+    font-size: 1.5rem;
+    text-decoration: none; }
+    .footer a:hover {
+      animation: shakeLink 200ms;
+      animation-iteration-count: infinite; }
+
+/* Animation wiggle sur liens */
+@keyframes shakeLink {
+  25% {
+    transform: translateX(2%); }
+  75% {
+    transform: translateX(-2%); } }
+.main {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+  /* border:1px solid pink; A SUPPRIMER */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  /* A modifier pour centrer plus tard */ }
+
+/* A GARDER SI JAMAIS ON DOIT UTILISER LES MENUS REFAITS
+.menu1 {
+  @include menus;
+  background-color: #fcdfdb;
+  transition: transform 1s;
+  transform: scale(1);
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+.menu2 {
+  @include menus;
+  background-color: #faf0f9;
+}
+.menu3 {
+  @include menus;
+  background-color: #f9f9f9;
+}
+.menu4 {
+  @include menus;
+  background-color: white;
+}
+*/
+.menu img {
+  max-width: 15rem;
+  max-height: 19rem;
+  transform: scale(1);
+  transition: transform 1s;
+  box-shadow: 0 0 0.7em grey; }
+  .menu img:hover {
+    transform: scale(1.2); }
+
+.conteneurMenu a {
+  color: #fbc945;
+  text-decoration: none;
+  transform: scale(1);
+  transition: transform 1s; }
+  .conteneurMenu a:hover {
+    transform: scale(1.2); }
+.conteneurMenu__conteneurLien {
+  background-color: #579c87;
+  width: 18rem;
+  height: 3rem;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  border-radius: 0.4rem;
+  text-align: center; }
+
+.conteneurMenu {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+  /* border:1px solid black;  A SUPPRIMER */ }
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  box-sizing: border-box;
+  height: 100vh;
+  /* A SUPPRIMER, utilisé pour mise en place */ }
+
+/*# sourceMappingURL=default.css.map */
