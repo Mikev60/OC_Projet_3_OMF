@@ -4,8 +4,9 @@
   margin-top: auto;
   display:flex;
   justify-content: space-evenly;
-  padding:1rem;
-  position: fixed;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  position: sticky;
   bottom:0;
   a {
     color:$ftColor;

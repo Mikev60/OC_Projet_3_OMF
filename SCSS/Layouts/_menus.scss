@@ -1,26 +1,71 @@
-/* A GARDER SI JAMAIS ON DOIT UTILISER LES MENUS REFAITS
-.menu1 {
+.menu1prev {
   @include menus;
   background-color: #fcdfdb;
-  transition: transform 1s;
-  transform: scale(1);
-  &:hover {
-    transform: scale(1.5);
-  }
+  margin-right:2rem;
 }
-.menu2 {
+.menu2prev {
   @include menus;
   background-color: #faf0f9;
 }
-.menu3 {
+.menu3prev {
   @include menus;
+  margin-right:2rem;
   background-color: #f9f9f9;
 }
-.menu4 {
+.menu4prev {
   @include menus;
   background-color: white;
 }
-*/
+
+.titreCatMenu {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 40%;
+    height: 9px;
+  }
+}
+
+.menuprev__contenu {
+  margin: auto;
+  text-align: center;
+  transform: scaleX(1);
+  transition: transform 500ms;
+  font-size: 1.3rem;
+  a {
+    width: 100%;
+    height: 100%;
+  }
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.titre2 {
+  background: linear-gradient(to right, #e38a12 0%,#8e5afe 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+.MenuMenu2 {
+  color: #e38a12;
+}
+.titre3 {
+  background: linear-gradient(to right, #0127dc 0%,#0881ec 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+.MenuMenu3 {
+  color: #0881ec;
+}
+.titre4 {
+  background: linear-gradient(to right, #43973d 0%,#beff7f 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+.MenuMenu4 {
+  color: #72bf56;
+}
 
 .menu img {
   max-width: 15rem;
@@ -34,6 +79,7 @@
   }
 }
 
+/* --------------------------------- Menu 1 sur la page menu1.html ---------------------- */
 .menu1 {
   width:50%;
   padding:2rem;

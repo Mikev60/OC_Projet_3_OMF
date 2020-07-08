@@ -2,23 +2,24 @@
   width: 80%;
   display: flex;
   flex-direction: column;
-  padding-bottom: 5rem;
   align-items: center;
   justify-content: center;
-  /* border:1px solid pink; A SUPPRIMER */
   margin-left:auto;
   margin-right:auto;
-  margin-top:1rem; /* A modifier pour centrer plus tard */
+  margin-top:auto;; /* A modifier pour centrer plus tard */
+  margin-bottom: 1rem;;
   h2 {
     text-align: center;
   }
   .prochainement {
     text-align: center;
-    font-size: 10rem;
+    font-size: 2.4rem;
     align-items: center;
     justify-content: center;
+    text-align: center;
     display: flex;
     visibility: hidden;
+    color:$ftColor;
     .p1 {
       animation-name: prochainement1;
       animation-duration: 2.5s;

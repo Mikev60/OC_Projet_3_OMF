@@ -1,9 +1,18 @@
-/* @mixin menus {
+@mixin menus {
   width: 20%;
   height: 17rem;
   box-shadow: 0 0 1em grey;
-  text-align: center;
   display:flex;
   flex-direction: column;
-  justify-content: center;
-} */
+  justify-content:center;
+  align-items: center;
+  img {
+    width: 2rem;
+    height: 2rem;
+    margin:auto;
+  }
+  a {
+    text-align: center;
+    text-decoration: none;
+  }
+}

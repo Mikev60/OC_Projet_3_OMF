@@ -1,13 +1,4 @@
 @charset "UTF-8";
-/* @mixin menus {
-  width: 20%;
-  height: 17rem;
-  box-shadow: 0 0 1em grey;
-  text-align: center;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-} */
 .header {
   background-color: #579c87;
   width: 100%; }
@@ -22,8 +13,9 @@
   margin-top: auto;
   display: flex;
   justify-content: space-evenly;
-  padding: 1rem;
-  position: fixed;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: sticky;
   bottom: 0; }
   .footer a {
     color: #fbc945;
@@ -43,23 +35,24 @@
   width: 80%;
   display: flex;
   flex-direction: column;
-  padding-bottom: 5rem;
   align-items: center;
   justify-content: center;
-  /* border:1px solid pink; A SUPPRIMER */
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1rem;
-  /* A modifier pour centrer plus tard */ }
+  margin-top: auto;
+  /* A modifier pour centrer plus tard */
+  margin-bottom: 1rem; }
   .main h2 {
     text-align: center; }
   .main .prochainement {
     text-align: center;
-    font-size: 10rem;
+    font-size: 2.4rem;
     align-items: center;
     justify-content: center;
+    text-align: center;
     display: flex;
-    visibility: hidden; }
+    visibility: hidden;
+    color: #fbc945; }
     .main .prochainement .p1 {
       animation-name: prochainement1;
       animation-duration: 2.5s;
@@ -117,29 +110,121 @@
     visibility: visible; }
   100% {
     visibility: visible; } }
-/* A GARDER SI JAMAIS ON DOIT UTILISER LES MENUS REFAITS
-.menu1 {
-  @include menus;
+.menu1prev {
+  width: 20%;
+  height: 17rem;
+  box-shadow: 0 0 1em grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #fcdfdb;
-  transition: transform 1s;
-  transform: scale(1);
-  &:hover {
-    transform: scale(1.5);
-  }
-}
-.menu2 {
-  @include menus;
-  background-color: #faf0f9;
-}
-.menu3 {
-  @include menus;
-  background-color: #f9f9f9;
-}
-.menu4 {
-  @include menus;
-  background-color: white;
-}
-*/
+  margin-right: 2rem; }
+  .menu1prev img {
+    width: 2rem;
+    height: 2rem;
+    margin: auto; }
+  .menu1prev a {
+    text-align: center;
+    text-decoration: none; }
+
+.menu2prev {
+  width: 20%;
+  height: 17rem;
+  box-shadow: 0 0 1em grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #faf0f9; }
+  .menu2prev img {
+    width: 2rem;
+    height: 2rem;
+    margin: auto; }
+  .menu2prev a {
+    text-align: center;
+    text-decoration: none; }
+
+.menu3prev {
+  width: 20%;
+  height: 17rem;
+  box-shadow: 0 0 1em grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  background-color: #f9f9f9; }
+  .menu3prev img {
+    width: 2rem;
+    height: 2rem;
+    margin: auto; }
+  .menu3prev a {
+    text-align: center;
+    text-decoration: none; }
+
+.menu4prev {
+  width: 20%;
+  height: 17rem;
+  box-shadow: 0 0 1em grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white; }
+  .menu4prev img {
+    width: 2rem;
+    height: 2rem;
+    margin: auto; }
+  .menu4prev a {
+    text-align: center;
+    text-decoration: none; }
+
+.titreCatMenu {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .titreCatMenu img {
+    width: 40%;
+    height: 9px; }
+
+.menuprev__contenu {
+  margin: auto;
+  text-align: center;
+  transform: scaleX(1);
+  transition: transform 500ms;
+  font-size: 1.3rem; }
+  .menuprev__contenu a {
+    width: 100%;
+    height: 100%; }
+  .menuprev__contenu:hover {
+    transform: scale(1.2); }
+
+.titre2 {
+  background: linear-gradient(to right, #e38a12 0%, #8e5afe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.MenuMenu2 {
+  color: #e38a12; }
+
+.titre3 {
+  background: linear-gradient(to right, #0127dc 0%, #0881ec 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.MenuMenu3 {
+  color: #0881ec; }
+
+.titre4 {
+  background: linear-gradient(to right, #43973d 0%, #beff7f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.MenuMenu4 {
+  color: #72bf56; }
+
 .menu img {
   max-width: 15rem;
   max-height: 19rem;
@@ -150,6 +235,7 @@
   .menu img:hover {
     transform: scale(1.2); }
 
+/* --------------------------------- Menu 1 sur la page menu1.html ---------------------- */
 .menu1 {
   width: 50%;
   padding: 2rem;
@@ -183,22 +269,18 @@
   margin-bottom: 2rem;
   /*margin-bottom: 2rem;*/
   /* border:1px solid black;  A SUPPRIMER */ }
-  .conteneurMenu a {
-    color: #fbc945;
-    text-decoration: none;
-    transform: scale(1);
-    transition: transform 1s;
-    margin-right: 2rem; }
-    .conteneurMenu a:hover {
-      transform: scale(1.1); }
   .conteneurMenu__conteneurLien {
     background-color: #579c87;
-    width: 18rem;
+    width: 20rem;
     height: 3rem;
     font-size: 2.4rem;
     line-height: 3rem;
     border-radius: 0.4rem;
-    text-align: center; }
+    color: #fbc945;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex; }
   @media all and (max-width: 1000px) {
     .conteneurMenu {
       flex-direction: column;
