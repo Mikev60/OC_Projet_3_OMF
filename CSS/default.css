@@ -43,13 +43,80 @@
   width: 80%;
   display: flex;
   flex-direction: column;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
+  align-items: center;
+  justify-content: center;
   /* border:1px solid pink; A SUPPRIMER */
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   /* A modifier pour centrer plus tard */ }
+  .main h2 {
+    text-align: center; }
+  .main .prochainement {
+    text-align: center;
+    font-size: 10rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    visibility: hidden; }
+    .main .prochainement .p1 {
+      animation-name: prochainement1;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite; }
+    .main .prochainement .p2 {
+      animation-name: prochainement2;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite; }
+    .main .prochainement .p3 {
+      animation-name: prochainement3;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards; }
 
+@keyframes prochainement1 {
+  0% {
+    visibility: hidden; }
+  20% {
+    visibility: visible; }
+  40% {
+    visibility: visible; }
+  60% {
+    visibility: hidden; }
+  80% {
+    visibility: hidden; }
+  90% {
+    visibility: hidden; }
+  100% {
+    visibility: hidden; } }
+@keyframes prochainement2 {
+  0% {
+    visibility: hidden; }
+  20% {
+    visibility: hidden; }
+  40% {
+    visibility: visible; }
+  60% {
+    visibility: visible; }
+  80% {
+    visibility: hidden; }
+  90% {
+    visibility: hidden; }
+  100% {
+    visibility: hidden; } }
+@keyframes prochainement3 {
+  0% {
+    visibility: hidden; }
+  20% {
+    visibility: hidden; }
+  40% {
+    visibility: hidden; }
+  60% {
+    visibility: visible; }
+  80% {
+    visibility: visible; }
+  100% {
+    visibility: visible; } }
 /* A GARDER SI JAMAIS ON DOIT UTILISER LES MENUS REFAITS
 .menu1 {
   @include menus;
@@ -82,6 +149,31 @@
   box-shadow: 0 0 0.7em grey; }
   .menu img:hover {
     transform: scale(1.2); }
+
+.menu1 {
+  width: 50%;
+  padding: 2rem;
+  margin: auto;
+  background-color: #fcdfdb;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .menu1 h3 {
+    text-align: center;
+    background: linear-gradient(to top, black 0%, black 3px, transparent 4px) no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 300ms; }
+    .menu1 h3:hover {
+      background-size: 100% 100%; }
+  .menu1 .ligne {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0; }
+  .menu1 > p {
+    text-align: center; }
 
 .conteneurMenu {
   width: 80%;

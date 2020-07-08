@@ -33,3 +33,33 @@
     transform: scale(1.2);
   }
 }
+
+.menu1 {
+  width:50%;
+  padding:2rem;
+  margin:auto;
+  background-color: $bckColorMenu1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    text-align: center;
+    background: linear-gradient(to top, black 0%, black 3px, transparent 4px) no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 300ms;
+    &:hover {
+      background-size: 100% 100%;
+    }
+  }
+  .ligne {
+    width:85%;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0
+  }
+  >p {
+    text-align: center;
+  }
+}
