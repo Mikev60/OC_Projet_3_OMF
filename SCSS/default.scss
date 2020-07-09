@@ -1,11 +1,13 @@
 @import "./Utils/variables";
 @import "./Utils/mixins";
+@import "./Utils/animations";
 
 @import "./Layouts/header";
 @import "./Layouts/footer";
 @import "./Layouts/main";
-@import "./Layouts/menus";
-@import "./Layouts/conteneurMenus";
+@import "./Layouts/menus"; /* Affichage des menus dans menusX.html */
+@import "./Layouts/menuspreviews"; /* Affichage des previews de menus */
+@import "./Layouts/conteneurMenus"; /* Conteneurs des menus dans index.html */
 
 body{
   display:flex;

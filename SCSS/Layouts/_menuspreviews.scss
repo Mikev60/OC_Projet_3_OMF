@@ -1,0 +1,50 @@
+/* Gère les aperçus des menus dans index.html */
+
+.menu1preview {
+  @include menusPreview;
+  background-color: $bckColorMenu1;
+  margin-right:2rem;
+}
+.menu2preview {
+  @include menusPreview;
+  background-color: #faf0f9;
+  .titre {
+    background: linear-gradient(to right, #e38a12 0%,#8e5afe 100%);
+  }
+  .MenuMenu2 {
+    color: #e38a12;
+  }
+}
+.menu3preview {
+  @include menusPreview;
+  margin-right:2rem;
+  background-color: #f9f9f9;
+  .titre {
+    background: linear-gradient(to right, #0127dc 0%,#0881ec 100%);
+  }
+  .MenuMenu3 {
+    color: #0881ec;
+  }
+}
+.menu4preview {
+  @include menusPreview;
+  background-color: white;
+  .titre {
+    background: linear-gradient(to right, #43973d 0%,#beff7f 100%);
+  }
+  .MenuMenu4 {
+    color: #72bf56;
+  }
+}
+
+.menu img {
+  max-width: 15rem;
+  max-height: 19rem;
+  transform: scale(1);
+  transition: transform 1s;
+  margin:auto;
+  box-shadow: 0 0 0.7em grey;
+  &:hover {
+    transform: scale(1.2);
+  }
+}

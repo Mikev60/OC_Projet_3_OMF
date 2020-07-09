@@ -4,8 +4,8 @@
   display: flex;
   justify-content: center;
   margin-bottom:2rem;
-  
-  &__conteneurLien {
+
+  &__prochainement {
     background-color: $bckColor;
     width: 20rem;
     height: 3rem;
@@ -17,6 +17,7 @@
     align-items: center;
     justify-content: center;
     display: flex;
+    margin-bottom:0;
   }
   @media all and (max-width: 1000px) {
     flex-direction: column;
@@ -28,6 +29,4 @@
       display:block;
     }
   }
-  /*margin-bottom: 2rem;*/
-  /* border:1px solid black;  A SUPPRIMER */
 }

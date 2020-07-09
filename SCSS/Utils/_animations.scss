@@ -1,0 +1,72 @@
+/* Animation prochainement dans index.html */
+@mixin AnimProchainement {
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes prochainement1{
+  0% {
+      visibility: hidden;
+  }
+  20% {
+      visibility: visible;
+  }
+  40% {
+      visibility: visible;
+  }
+  60%{
+      visibility: hidden;
+  }
+  80%{
+      visibility: hidden;
+  }
+  90% {
+    visibility: hidden;
+  }
+  100%{
+      visibility: hidden;
+  }
+}
+@keyframes prochainement2{
+  0% {
+      visibility : hidden ;
+  }
+  20% {
+      visibility : hidden;
+  }
+  40% {
+      visibility: visible;
+  }
+  60%{
+      visibility: visible;
+  }
+  80%{
+      visibility: hidden;
+  }
+  90% {
+    visibility: hidden;
+  }
+  100%{
+      visibility: hidden;
+  }
+}
+@keyframes prochainement3{
+  0% {
+      visibility : hidden ;
+  }
+  20% {
+      visibility : hidden;
+  }
+  40% {
+      visibility: hidden;
+  }
+  60%{
+      visibility: visible;
+  }
+  80%{
+      visibility: visible;
+  }
+  100%{
+      visibility: visible;
+  }
+}

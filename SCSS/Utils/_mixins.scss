@@ -1,6 +1,7 @@
-@mixin menus {
-  width: 20%;
-  height: 17rem;
+/* Mixin gestion des previews des menus */
+@mixin menusPreview {
+  width: 22%;
+  height: 20rem;
   box-shadow: 0 0 1em grey;
   display:flex;
   flex-direction: column;
@@ -14,5 +15,23 @@
   a {
     text-align: center;
     text-decoration: none;
+  }
+  .menupreview__contenu {
+    margin: auto;
+    text-align: center;
+    transform: scaleX(1);
+    transition: transform 500ms;
+    font-size: 1.3rem;
+    a {
+      width: 100%;
+      height: 100%;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+    .titre {
+      -webkit-background-clip:text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 }

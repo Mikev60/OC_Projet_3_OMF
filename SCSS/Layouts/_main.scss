@@ -4,10 +4,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:auto;; /* A modifier pour centrer plus tard */
-  margin-bottom: 1rem;;
+  margin: auto;
+  margin-top:0.7rem;
   h2 {
     text-align: center;
   }
@@ -22,86 +20,16 @@
     color:$ftColor;
     .p1 {
       animation-name: prochainement1;
-      animation-duration: 2.5s;
-      animation-iteration-count: infinite;
+      @include AnimProchainement;
     }
     .p2 {
       animation-name: prochainement2;
-      animation-duration: 2.5s;
-      animation-iteration-count: infinite;
+      @include AnimProchainement;
     }
     .p3 {
       animation-name: prochainement3;
-      animation-duration: 2.5s;
-      animation-iteration-count: infinite;
+      @include AnimProchainement;
       animation-fill-mode: forwards;
     }
-  }
-}
-
-@keyframes prochainement1{
-  0% {
-      visibility: hidden;
-  }
-  20% {
-      visibility: visible;
-  }
-  40% {
-      visibility: visible;
-  }
-  60%{
-      visibility: hidden;
-  }
-  80%{
-      visibility: hidden;
-  }
-  90% {
-    visibility: hidden;
-  }
-  100%{
-      visibility: hidden;
-  }
-}
-@keyframes prochainement2{
-  0% {
-      visibility : hidden ;
-  }
-  20% {
-      visibility : hidden;
-  }
-  40% {
-      visibility: visible;
-  }
-  60%{
-      visibility: visible;
-  }
-  80%{
-      visibility: hidden;
-  }
-  90% {
-    visibility: hidden;
-  }
-  100%{
-      visibility: hidden;
-  }
-}
-@keyframes prochainement3{
-  0% {
-      visibility : hidden ;
-  }
-  20% {
-      visibility : hidden;
-  }
-  40% {
-      visibility: hidden;
-  }
-  60%{
-      visibility: visible;
-  }
-  80%{
-      visibility: visible;
-  }
-  100%{
-      visibility: visible;
   }
 }

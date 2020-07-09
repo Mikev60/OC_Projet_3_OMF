@@ -1,0 +1,9 @@
+- Créer le mixin des menus
+- Création des variables pour les couleurs
+- Ajuster les animations (image cliquable)
+- Ajuster les polices 
+- Ajuster les couleurs
+- Création du responsive 
+- Contenu mentions légales
+
+- Contenu menu 4 -- FAIT 09/07
