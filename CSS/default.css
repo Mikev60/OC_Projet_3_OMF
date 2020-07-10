@@ -56,6 +56,9 @@
     color: #fbc945;
     font-size: 2rem;
     text-align: center; }
+    .header h1 a {
+      text-decoration: none;
+      color: #fbc945; }
 
 .footer {
   background-color: #579c87;
@@ -319,7 +322,8 @@
     margin: auto; }
   .menu1preview a {
     text-align: center;
-    text-decoration: none; }
+    text-decoration: none;
+    line-height: 3rem; }
   .menu1preview .menupreview__contenu {
     margin: auto;
     text-align: center;
@@ -350,7 +354,8 @@
     margin: auto; }
   .menu2preview a {
     text-align: center;
-    text-decoration: none; }
+    text-decoration: none;
+    line-height: 3rem; }
   .menu2preview .menupreview__contenu {
     margin: auto;
     text-align: center;
@@ -386,7 +391,8 @@
     margin: auto; }
   .menu3preview a {
     text-align: center;
-    text-decoration: none; }
+    text-decoration: none;
+    line-height: 3rem; }
   .menu3preview .menupreview__contenu {
     margin: auto;
     text-align: center;
@@ -421,7 +427,8 @@
     margin: auto; }
   .menu4preview a {
     text-align: center;
-    text-decoration: none; }
+    text-decoration: none;
+    line-height: 3rem; }
   .menu4preview .menupreview__contenu {
     margin: auto;
     text-align: center;

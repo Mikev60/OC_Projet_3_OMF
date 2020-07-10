@@ -2,8 +2,12 @@
   background-color: $bckColor;
   width: 100%;
   h1{
-    color:$ftColor;
+    color: $ftColor;
     font-size: 2rem;
     text-align: center;
+    a {
+      text-decoration: none;
+      color: $ftColor;
+    }
   }
 }
