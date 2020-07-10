@@ -1,14 +1,8 @@
 @charset "UTF-8";
-/* EMPLACEMENT Temporaire */
-.gold {
-  color: #c67412; }
-
-.violet {
-  color: purple; }
-
-.darkblue {
-  color: darkblue; }
-
+/* Menu 1 */
+/* Menu 2 */
+/* Menu 3 */
+/* Menu 4 */
 /* Mixin gestion des previews des menus */
 /* Mixin des menus (dans leur page de présentation) */
 /* Animation prochainement dans index.html */
@@ -130,7 +124,8 @@
   align-items: center;
   margin-top: 2rem;
   background-color: #fcdfdb;
-  margin-top: 0; }
+  margin-top: 0;
+  color: #3d1319; }
   .menu1 h2 {
     background: linear-gradient(to right, #3d1319 0%, #3d1319 100%);
     font-size: 3rem;
@@ -212,6 +207,12 @@
       height: 9px; }
   .menu2 .titreCatMenu {
     width: 90%; }
+  .menu2 .p1 {
+    color: #c67412; }
+  .menu2 .p2 {
+    color: purple; }
+  .menu2 .p3 {
+    color: darkblue; }
 
 .menu3 {
   width: 50%;
@@ -221,7 +222,8 @@
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
-  background-color: #edefef; }
+  background-color: #edefef;
+  color: black; }
   .menu3 h2 {
     background: linear-gradient(to right, #0127dc 0%, #0881ec 100%);
     font-size: 3rem;
@@ -377,7 +379,7 @@
   justify-content: center;
   align-items: center;
   margin-right: 2rem;
-  background-color: #f9f9f9; }
+  background-color: #edefef; }
   .menu3preview img {
     width: 2rem;
     height: 2rem;
@@ -412,7 +414,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white; }
+  background-color: #fdfffd; }
   .menu4preview img {
     width: 2rem;
     height: 2rem;
@@ -437,7 +439,7 @@
   .menu4preview .titre {
     background: linear-gradient(to right, #43973d 0%, #beff7f 100%); }
   .menu4preview .MenuMenu4 {
-    color: #72bf56; }
+    color: #43973d; }
 
 .menu img {
   max-width: 15rem;

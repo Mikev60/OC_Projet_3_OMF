@@ -1,16 +1,26 @@
 $bckColor : #579c87;
+$ftColor : #fbc945;
+
+/* Menu 1 */
+$ftColorMenu1 : #3d1319;
 $bckColorMenu1 : #fcdfdb;
 
-$ftColor : #fbc945;
-$ftColorMenu1 : #3d1319;
+/* Menu 2 */
+$bckColorMenu2 : #faf0f9;
+$ftColorMenu2-1 : #c67412;
+$ftColorMenu2-2 : purple;
+$ftColorMenu2-3 : darkblue;
+$Menu2Degrade1 : #e38a12;
+$Menu2Degrade2 : #8e5afe;
 
-/* EMPLACEMENT Temporaire */
-.gold {
-  color: #c67412;
-}
-.violet {
-  color:purple;
-}
-.darkblue {
-  color: darkblue;
-}
+/* Menu 3 */
+$bckColorMenu3: #edefef;
+$ftColorMenu3: black;
+$Menu3Degrade1 : #0127dc;
+$Menu3Degrade2 : #0881ec;
+
+/* Menu 4 */
+$bckColorMenu4: #fdfffd;
+$ftColorMenu4: black;
+$Menu4Degrade1 : #43973d;
+$Menu4Degrade2 : #beff7f;

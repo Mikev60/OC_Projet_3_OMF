@@ -3,6 +3,7 @@
   @include menu($ftColorMenu1, $ftColorMenu1,black,black,black);
   background-color: $bckColorMenu1;
   margin-top:0;
+  color: $ftColorMenu1;
   .ligne {
     width:85%;
   }
@@ -18,22 +19,32 @@
   }
 }
 .menu2 {
-  @include menu(#e38a12,#8e5afe,black,black,black);
-  background-color: #faf0f9;
+  @include menu($Menu2Degrade1,$Menu2Degrade2,black,black,black);
+  background-color: $bckColorMenu2;
   .titreCatMenu {
     width: 90%;
   }
+  .p1 {
+    color: $ftColorMenu2-1;
+  }
+  .p2 {
+    color: $ftColorMenu2-2;
+  }
+  .p3 {
+    color: $ftColorMenu2-3;
+  }
 }
 .menu3 {
-  @include menu(#0127dc,#0881ec,black,black,black);
-  background-color: #edefef;
+  @include menu($Menu3Degrade1,$Menu3Degrade2,black,black,black);
+  background-color: $bckColorMenu3;
+  color: $ftColorMenu3;
   .titreCatMenu {
     width: 90%;
   }
 }
 .menu4 {
-  @include menu(#43973d,#beff7f,black,black,black);
-  background-color: #fdfffd;
+  @include menu($Menu4Degrade1,$Menu4Degrade2,black,black,black);
+  background-color: $bckColorMenu4;
   .ligne {
     width:75%;
   }

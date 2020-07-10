@@ -1,5 +1,3 @@
-- Créer le mixin des menus
-- Création des variables pour les couleurs
 - Ajuster les animations (image cliquable)
 - Ajuster les polices 
 - Ajuster les couleurs
@@ -7,3 +5,5 @@
 - Contenu mentions légales
 
 - Contenu menu 4 -- FAIT 09/07
+- Créer le mixin des menus -- FAIT 10/07
+- Création des variables pour les couleurs -- FAIT 10/07

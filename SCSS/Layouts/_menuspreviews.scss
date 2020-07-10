@@ -7,33 +7,33 @@
 }
 .menu2preview {
   @include menusPreview;
-  background-color: #faf0f9;
+  background-color: $bckColorMenu2;
   .titre {
-    background: linear-gradient(to right, #e38a12 0%,#8e5afe 100%);
+    background: linear-gradient(to right, $Menu2Degrade1 0%,$Menu2Degrade2 100%);
   }
   .MenuMenu2 {
-    color: #e38a12;
+    color: $Menu2Degrade1;
   }
 }
 .menu3preview {
   @include menusPreview;
   margin-right:2rem;
-  background-color: #f9f9f9;
+  background-color: $bckColorMenu3;
   .titre {
-    background: linear-gradient(to right, #0127dc 0%,#0881ec 100%);
+    background: linear-gradient(to right, $Menu3Degrade1 0%,$Menu3Degrade2 100%);
   }
   .MenuMenu3 {
-    color: #0881ec;
+    color: $Menu3Degrade2;
   }
 }
 .menu4preview {
   @include menusPreview;
-  background-color: white;
+  background-color: $bckColorMenu4;
   .titre {
-    background: linear-gradient(to right, #43973d 0%,#beff7f 100%);
+    background: linear-gradient(to right, $Menu4Degrade1 0%,$Menu4Degrade2 100%);
   }
   .MenuMenu4 {
-    color: #72bf56;
+    color: $Menu4Degrade1;
   }
 }
 
