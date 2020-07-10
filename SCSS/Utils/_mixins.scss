@@ -51,7 +51,7 @@
       -webkit-text-fill-color: transparent;
   }
   h3 {
-    background: linear-gradient(to top, $degrade1 0%, $degrade1 3px, transparent 4px) no-repeat;
+    background: linear-gradient(to top, $underline1 0%, $underline1 3px, transparent 4px) no-repeat;
     background-size: 0% 100%;
     transition: background-size 300ms;
     &:hover {
