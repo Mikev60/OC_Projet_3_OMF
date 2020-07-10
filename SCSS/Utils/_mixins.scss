@@ -35,3 +35,51 @@
     }
   }
 }
+/* Mixin des menus (dans leur page de présentation) */
+@mixin menu ($degradeTitre1, $degradeTitre2,$underline1,$unederline2,$underline3) {
+  width:50%;
+  padding:2rem;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:2rem;
+  h2 {
+      background: linear-gradient(to right, $degradeTitre1 0%,$degradeTitre2 100%);
+      font-size: 3rem;
+      -webkit-background-clip:text;
+      -webkit-text-fill-color: transparent;
+  }
+  h3 {
+    background: linear-gradient(to top, $degrade1 0%, $degrade1 3px, transparent 4px) no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 300ms;
+    &:hover {
+      background-size: 100% 100%;
+    }
+  }
+  .ligne {
+    width:75%;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0;
+  }
+  >p {
+    text-align: center;
+  }
+  img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .titreCatMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 35%;
+      height: 9px;
+    }
+  }
+}
