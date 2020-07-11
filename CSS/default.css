@@ -3,6 +3,26 @@
 /* Menu 2 */
 /* Menu 3 */
 /* Menu 4 */
+/* Contenu de tous les menus */
+@font-face {
+  font-family: "contenuMenu";
+  src: url("../Polices/contenuMenu.ttf"); }
+/* Polices du menu 1 */
+@font-face {
+  font-family: "titreMenu1";
+  src: url("../Polices/Menu1/titreMenu1.ttf"); }
+/* Polices du menu 2 */
+@font-face {
+  font-family: "titreMenu2";
+  src: url("../Polices/Menu2/titreMenu2.ttf"); }
+/* Polices du menu 3 */
+@font-face {
+  font-family: "titreMenu3";
+  src: url("../Polices/Menu3/titreMenu3.ttf"); }
+/* Polices du menu 4 */
+@font-face {
+  font-family: "titreMenu4";
+  src: url("../Polices/Menu3/titreMenu3.ttf"); }
 /* Mixin gestion des previews des menus */
 /* Mixin des menus (dans leur page de présentation) */
 /* Animation prochainement dans index.html */
@@ -120,7 +140,7 @@
 /* ------- Gère affichage des menus dans leur page ------ */
 .menu1 {
   width: 50%;
-  padding: 2rem;
+  padding: 1.5rem;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -128,14 +148,15 @@
   margin-top: 2rem;
   background-color: #fcdfdb;
   margin-top: 0;
-  color: #3d1319; }
+  color: #3d1319;
+  font-family: "contenuMenu", Arial, serif; }
   .menu1 h2 {
     background: linear-gradient(to right, #3d1319 0%, #3d1319 100%);
     font-size: 3rem;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .menu1 h3 {
-    background: linear-gradient(to top, black 0%, black 3px, transparent 4px) no-repeat;
+    background: linear-gradient(to top, #3d1319 0%, #3d1319 2px, transparent 3px) no-repeat;
     background-size: 0% 100%;
     transition: background-size 300ms; }
     .menu1 h3:hover {
@@ -161,17 +182,30 @@
       height: 9px; }
   .menu1 .ligne {
     width: 85%; }
+    .menu1 .ligne p {
+      font-size: 0.9rem; }
+    .menu1 .ligne h3 {
+      font-size: 2rem; }
   .menu1 .titreCatMenu {
     width: 80%; }
   .menu1 .footerMenu {
-    display: flex; }
+    display: flex;
+    align-items: center; }
     .menu1 .footerMenu img {
       width: 2.2rem;
-      height: 2.2rem; }
+      height: 2.2rem;
+      margin-right: 0.5rem; }
+    .menu1 .footerMenu .footerMenu1 {
+      font-family: "titreMenu1", Arial, serif;
+      font-size: 1.7rem; }
+  .menu1 .enTeteMenu1 {
+    font-family: "titreMenu1", Arial, serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem; }
 
 .menu2 {
   width: 50%;
-  padding: 2rem;
+  padding: 1.5rem;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -184,7 +218,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .menu2 h3 {
-    background: linear-gradient(to top, black 0%, black 3px, transparent 4px) no-repeat;
+    background: linear-gradient(to top, #c67412 0%, #c67412 2px, transparent 3px) no-repeat;
     background-size: 0% 100%;
     transition: background-size 300ms; }
     .menu2 h3:hover {
@@ -208,6 +242,8 @@
     .menu2 .titreCatMenu img {
       width: 35%;
       height: 9px; }
+  .menu2 h2 {
+    font-family: "titreMenu2", Arial, serif; }
   .menu2 .titreCatMenu {
     width: 90%; }
   .menu2 .p1 {
@@ -216,24 +252,36 @@
     color: purple; }
   .menu2 .p3 {
     color: darkblue; }
+  .menu2 .t1 {
+    background: linear-gradient(to top, #c67412 0%, #c67412 2px, transparent 3px) no-repeat; }
+  .menu2 .t2 {
+    background: linear-gradient(to top, purple 0%, purple 2px, transparent 3px) no-repeat; }
+  .menu2 .t3 {
+    background: linear-gradient(to top, darkblue 0%, darkblue 2px, transparent 3px) no-repeat; }
+  .menu2 .t1, .menu2 .t2, .menu2 .t3 {
+    background-size: 0% 100%;
+    transition: background-size 300ms; }
+    .menu2 .t1:hover, .menu2 .t2:hover, .menu2 .t3:hover {
+      background-size: 100% 100%; }
 
 .menu3 {
   width: 50%;
-  padding: 2rem;
+  padding: 1.5rem;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
   background-color: #edefef;
-  color: black; }
+  color: black;
+  font-family: "contenuMenu", Arial, serif; }
   .menu3 h2 {
     background: linear-gradient(to right, #0127dc 0%, #0881ec 100%);
     font-size: 3rem;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .menu3 h3 {
-    background: linear-gradient(to top, black 0%, black 3px, transparent 4px) no-repeat;
+    background: linear-gradient(to top, black 0%, black 2px, transparent 3px) no-repeat;
     background-size: 0% 100%;
     transition: background-size 300ms; }
     .menu3 h3:hover {
@@ -257,25 +305,31 @@
     .menu3 .titreCatMenu img {
       width: 35%;
       height: 9px; }
+  .menu3 h2 {
+    font-family: "titreMenu3", Arial, serif;
+    font-size: 4rem; }
   .menu3 .titreCatMenu {
-    width: 90%; }
+    width: 90%;
+    font-size: 0.9rem; }
 
 .menu4 {
   width: 50%;
-  padding: 2rem;
+  padding: 1.5rem;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
-  background-color: #fdfffd; }
+  background-color: #fdfffd;
+  font-family: "contenuMenu", Arial, serif;
+  font-size: 0.9rem; }
   .menu4 h2 {
     background: linear-gradient(to right, #43973d 0%, #beff7f 100%);
     font-size: 3rem;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .menu4 h3 {
-    background: linear-gradient(to top, black 0%, black 3px, transparent 4px) no-repeat;
+    background: linear-gradient(to top, black 0%, black 2px, transparent 3px) no-repeat;
     background-size: 0% 100%;
     transition: background-size 300ms; }
     .menu4 h3:hover {
@@ -299,6 +353,8 @@
     .menu4 .titreCatMenu img {
       width: 35%;
       height: 9px; }
+  .menu4 h2 {
+    font-style: italic; }
   .menu4 .ligne {
     width: 75%; }
   .menu4 .titreCatMenu {
@@ -338,6 +394,11 @@
     .menu1preview .menupreview__contenu .titre {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
+  .menu1preview .titreMenu1 {
+    font-family: "titreMenu1", Arial, serif;
+    color: #3d1319; }
+  .menu1preview a {
+    color: #3d1319; }
 
 .menu2preview {
   width: 22%;
@@ -371,7 +432,8 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
   .menu2preview .titre {
-    background: linear-gradient(to right, #e38a12 0%, #8e5afe 100%); }
+    background: linear-gradient(to right, #e38a12 0%, #8e5afe 100%);
+    font-family: "titreMenu2", Arial, serif; }
   .menu2preview .MenuMenu2 {
     color: #e38a12; }
 
@@ -408,7 +470,9 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
   .menu3preview .titre {
-    background: linear-gradient(to right, #0127dc 0%, #0881ec 100%); }
+    background: linear-gradient(to right, #0127dc 0%, #0881ec 100%);
+    font-family: "titreMenu3", Arial, serif;
+    font-size: 1.7rem; }
   .menu3preview .MenuMenu3 {
     color: #0881ec; }
 
@@ -444,7 +508,9 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
   .menu4preview .titre {
-    background: linear-gradient(to right, #43973d 0%, #beff7f 100%); }
+    background: linear-gradient(to right, #43973d 0%, #beff7f 100%);
+    font-family: "titreMenu4", Arial, serif;
+    font-size: 1.7rem; }
   .menu4preview .MenuMenu4 {
     color: #43973d; }
 

@@ -4,12 +4,20 @@
   @include menusPreview;
   background-color: $bckColorMenu1;
   margin-right:2rem;
+  .titreMenu1 {
+    font-family: "titreMenu1", Arial, serif;
+    color:$ftColorMenu1;
+  }
+  a {
+    color:$ftColorMenu1;
+  }
 }
 .menu2preview {
   @include menusPreview;
   background-color: $bckColorMenu2;
   .titre {
     background: linear-gradient(to right, $Menu2Degrade1 0%,$Menu2Degrade2 100%);
+    font-family: "titreMenu2", Arial, serif;
   }
   .MenuMenu2 {
     color: $Menu2Degrade1;
@@ -21,6 +29,8 @@
   background-color: $bckColorMenu3;
   .titre {
     background: linear-gradient(to right, $Menu3Degrade1 0%,$Menu3Degrade2 100%);
+    font-family: "titreMenu3", Arial, serif;
+    font-size:1.7rem;
   }
   .MenuMenu3 {
     color: $Menu3Degrade2;
@@ -31,6 +41,8 @@
   background-color: $bckColorMenu4;
   .titre {
     background: linear-gradient(to right, $Menu4Degrade1 0%,$Menu4Degrade2 100%);
+    font-family: "titreMenu4", Arial, serif;
+    font-size:1.7rem;
   }
   .MenuMenu4 {
     color: $Menu4Degrade1;

@@ -37,9 +37,9 @@
   }
 }
 /* Mixin des menus (dans leur page de présentation) */
-@mixin menu ($degradeTitre1, $degradeTitre2,$underline1,$underline2,$underline3) {
+@mixin menu ($degradeTitre1, $degradeTitre2,$underline1) {
   width:50%;
-  padding:2rem;
+  padding:1.5rem;
   margin:auto;
   display: flex;
   flex-direction: column;
@@ -52,7 +52,7 @@
       -webkit-text-fill-color: transparent;
   }
   h3 {
-    background: linear-gradient(to top, $underline1 0%, $underline1 3px, transparent 4px) no-repeat;
+    background: linear-gradient(to top, $underline1 0%, $underline1 2px, transparent 3px) no-repeat;
     background-size: 0% 100%;
     transition: background-size 300ms;
     &:hover {

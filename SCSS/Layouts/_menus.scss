@@ -1,26 +1,47 @@
 /* ------- Gère affichage des menus dans leur page ------ */
 .menu1 {
-  @include menu($ftColorMenu1, $ftColorMenu1,black,black,black);
+  @include menu($ftColorMenu1, $ftColorMenu1,$ftColorMenu1);
   background-color: $bckColorMenu1;
   margin-top:0;
   color: $ftColorMenu1;
+  font-family: "contenuMenu", Arial, serif;
   .ligne {
     width:85%;
+    p {
+      font-size: 0.9rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
   }
   .titreCatMenu {
     width: 80%;
   }
   .footerMenu {
     display: flex;
+    align-items: center;
     img {
       width: 2.2rem;
       height:2.2rem;
+      margin-right:0.5rem;
     }
+    .footerMenu1 {
+      font-family: "titreMenu1", Arial, serif;
+      font-size:1.7rem;
+    }
+  }
+  .enTeteMenu1 {
+    font-family: "titreMenu1", Arial, serif;
+    font-size:2.5rem;
+    margin-bottom: 1rem;
   }
 }
 .menu2 {
-  @include menu($Menu2Degrade1,$Menu2Degrade2,black,black,black);
+  @include menu($Menu2Degrade1,$Menu2Degrade2,$ftColorMenu2-1);
   background-color: $bckColorMenu2;
+  h2 {
+    font-family: "titreMenu2", Arial, serif;
+  }
   .titreCatMenu {
     width: 90%;
   }
@@ -33,18 +54,45 @@
   .p3 {
     color: $ftColorMenu2-3;
   }
+  .t1 {
+    background: linear-gradient(to top, $ftColorMenu2-1 0%, $ftColorMenu2-1 2px, transparent 3px) no-repeat;
+  }
+  .t2 {
+    background: linear-gradient(to top, $ftColorMenu2-2 0%, $ftColorMenu2-2 2px, transparent 3px) no-repeat;
+  }
+  .t3 {
+    background: linear-gradient(to top, $ftColorMenu2-3 0%, $ftColorMenu2-3 2px, transparent 3px) no-repeat;
+  }
+  .t1,.t2,.t3 {
+    background-size: 0% 100%;
+    transition: background-size 300ms;
+    &:hover {
+      background-size: 100% 100%;
+    }
+  }
 }
 .menu3 {
-  @include menu($Menu3Degrade1,$Menu3Degrade2,black,black,black);
+  @include menu($Menu3Degrade1,$Menu3Degrade2,black);
   background-color: $bckColorMenu3;
   color: $ftColorMenu3;
+  font-family: "contenuMenu", Arial, serif;
+  h2 {
+    font-family: "titreMenu3", Arial, serif;
+    font-size: 4rem;
+  }
   .titreCatMenu {
     width: 90%;
+    font-size: 0.9rem;
   }
 }
 .menu4 {
-  @include menu($Menu4Degrade1,$Menu4Degrade2,black,black,black);
+  @include menu($Menu4Degrade1,$Menu4Degrade2,black);
   background-color: $bckColorMenu4;
+  font-family: "contenuMenu", Arial, serif;
+  font-size:0.9rem;
+  h2 {
+    font-style: italic;
+  }
   .ligne {
     width:75%;
   }

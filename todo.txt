@@ -1,3 +1,4 @@
+- Reprendre aux soulignements dans le menu 2 (ajouter classes par paragraphe)
 - Ajuster les polices 
 - Image qui ne fonctionne pas sur github pages
 - Ajuster les couleurs
