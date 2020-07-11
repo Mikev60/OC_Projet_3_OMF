@@ -63,6 +63,7 @@
     background: linear-gradient(to top, $underline1 0%, $underline1 2px, transparent 3px) no-repeat;
     background-size: 0% 100%;
     transition: background-size 300ms;
+    text-align: center;
     &:hover {
       background-size: 100% 100%;
     }
@@ -94,6 +95,7 @@
   @media all and (max-width: 1500px) {
     width:70%;
     .titreCatMenu {
+      text-align: center;
       h3 {
         margin:auto;
         text-align: center;

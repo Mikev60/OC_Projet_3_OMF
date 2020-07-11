@@ -104,9 +104,12 @@
   width: 100%;
   margin-top: 1rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  box-sizing: border-box;
   position: sticky;
   bottom: 0; }
   .footer a {
@@ -178,7 +181,8 @@
   .menu1 h3 {
     background: linear-gradient(to top, #3d1319 0%, #3d1319 2px, transparent 3px) no-repeat;
     background-size: 0% 100%;
-    transition: background-size 300ms; }
+    transition: background-size 300ms;
+    text-align: center; }
     .menu1 h3:hover {
       background-size: 100% 100%; }
   .menu1 .ligne {
@@ -203,9 +207,11 @@
   @media all and (max-width: 1500px) {
     .menu1 {
       width: 70%; }
-      .menu1 .titreCatMenu h3 {
-        margin: auto;
-        text-align: center; } }
+      .menu1 .titreCatMenu {
+        text-align: center; }
+        .menu1 .titreCatMenu h3 {
+          margin: auto;
+          text-align: center; } }
   @media all and (max-width: 750px) {
     .menu1 {
       width: 85%; }
@@ -259,7 +265,8 @@
   .menu2 h3 {
     background: linear-gradient(to top, #c67412 0%, #c67412 2px, transparent 3px) no-repeat;
     background-size: 0% 100%;
-    transition: background-size 300ms; }
+    transition: background-size 300ms;
+    text-align: center; }
     .menu2 h3:hover {
       background-size: 100% 100%; }
   .menu2 .ligne {
@@ -284,9 +291,11 @@
   @media all and (max-width: 1500px) {
     .menu2 {
       width: 70%; }
-      .menu2 .titreCatMenu h3 {
-        margin: auto;
-        text-align: center; } }
+      .menu2 .titreCatMenu {
+        text-align: center; }
+        .menu2 .titreCatMenu h3 {
+          margin: auto;
+          text-align: center; } }
   @media all and (max-width: 750px) {
     .menu2 {
       width: 85%; }
@@ -340,7 +349,8 @@
   .menu3 h3 {
     background: linear-gradient(to top, black 0%, black 2px, transparent 3px) no-repeat;
     background-size: 0% 100%;
-    transition: background-size 300ms; }
+    transition: background-size 300ms;
+    text-align: center; }
     .menu3 h3:hover {
       background-size: 100% 100%; }
   .menu3 .ligne {
@@ -365,9 +375,11 @@
   @media all and (max-width: 1500px) {
     .menu3 {
       width: 70%; }
-      .menu3 .titreCatMenu h3 {
-        margin: auto;
-        text-align: center; } }
+      .menu3 .titreCatMenu {
+        text-align: center; }
+        .menu3 .titreCatMenu h3 {
+          margin: auto;
+          text-align: center; } }
   @media all and (max-width: 750px) {
     .menu3 {
       width: 85%; }
@@ -406,7 +418,8 @@
   .menu4 h3 {
     background: linear-gradient(to top, black 0%, black 2px, transparent 3px) no-repeat;
     background-size: 0% 100%;
-    transition: background-size 300ms; }
+    transition: background-size 300ms;
+    text-align: center; }
     .menu4 h3:hover {
       background-size: 100% 100%; }
   .menu4 .ligne {
@@ -431,9 +444,11 @@
   @media all and (max-width: 1500px) {
     .menu4 {
       width: 70%; }
-      .menu4 .titreCatMenu h3 {
-        margin: auto;
-        text-align: center; } }
+      .menu4 .titreCatMenu {
+        text-align: center; }
+        .menu4 .titreCatMenu h3 {
+          margin: auto;
+          text-align: center; } }
   @media all and (max-width: 750px) {
     .menu4 {
       width: 85%; }
@@ -450,6 +465,73 @@
     width: 75%; }
   .menu4 .titreCatMenu {
     width: 90%; }
+
+.mentions {
+  width: 50%;
+  /*padding:1.5rem;*/
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*margin-top:2rem;*/
+  width: 70%;
+  background-color: #faf0f9;
+  align-items: flex-start; }
+  .mentions h2 {
+    background: linear-gradient(to right, #3d1319 0%, #3d1319 100%);
+    font-size: 3rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .mentions h3 {
+    background: linear-gradient(to top, #3d1319 0%, #3d1319 2px, transparent 3px) no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 300ms;
+    text-align: center; }
+    .mentions h3:hover {
+      background-size: 100% 100%; }
+  .mentions .ligne {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0; }
+  .mentions > p {
+    text-align: center; }
+  .mentions img {
+    width: 3rem;
+    height: 3rem; }
+  .mentions .titreCatMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .mentions .titreCatMenu img {
+      width: 35%;
+      height: 9px; }
+  @media all and (max-width: 1500px) {
+    .mentions {
+      width: 70%; }
+      .mentions .titreCatMenu {
+        text-align: center; }
+        .mentions .titreCatMenu h3 {
+          margin: auto;
+          text-align: center; } }
+  @media all and (max-width: 750px) {
+    .mentions {
+      width: 85%; }
+      .mentions .titreCatMenu {
+        margin-top: 1rem; }
+        .mentions .titreCatMenu h3 {
+          margin: auto;
+          text-align: center; }
+        .mentions .titreCatMenu img {
+          display: none; }
+      .mentions .ligne {
+        flex-direction: column; } }
+  .mentions h2 {
+    margin: auto; }
+  .mentions p {
+    text-align: justify; }
 
 /* Affichage des menus dans menusX.html */
 /* Gère les aperçus des menus dans index.html */

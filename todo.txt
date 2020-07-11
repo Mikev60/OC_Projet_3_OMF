@@ -1,9 +1,5 @@
-
 - Image qui ne fonctionne pas sur github pages
-- Ajuster hauteur main selon les pages
-- Ajuster les couleurs
-- Création du responsive 
-- Contenu mentions légales
+
 
 - Contenu menu 4 -- FAIT 09/07
 - Créer le mixin des menus -- FAIT 10/07
@@ -12,3 +8,7 @@
 - Reprendre aux soulignements dans le menu 2 (ajouter classes par paragraphe) -- FAIT 11/07
 - Ajuster les polices -- FAIT 11/07
 - Ajuster présentation titre OMF -- FAIT 11/07
+- Ajuster hauteur main selon les pages -- FAIT 11/07
+- Création du responsive -- FAIT 11/07
+- Contenu mentions légales -- FAIT 11/07
+- Mettre liens mentions légales et contactez aux extrémités -- FAIT 11/07
