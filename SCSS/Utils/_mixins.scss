@@ -35,16 +35,24 @@
       -webkit-text-fill-color: transparent;
     }
   }
+  @media all and (max-width: 1500px) {
+    width:20%;
+    margin-bottom:2rem;
+  }
+  @media all and (max-width: 750px) {
+    width:63%;
+    margin-bottom:2rem;
+  }
 }
 /* Mixin des menus (dans leur page de présentation) */
 @mixin menu ($degradeTitre1, $degradeTitre2,$underline1) {
   width:50%;
-  padding:1.5rem;
+  /*padding:1.5rem;*/
   margin:auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top:2rem;
+  /*margin-top:2rem;*/
   h2 {
       background: linear-gradient(to right, $degradeTitre1 0%,$degradeTitre2 100%);
       font-size: 3rem;
@@ -81,6 +89,31 @@
     img {
       width: 35%;
       height: 9px;
+    }
+  }
+  @media all and (max-width: 1500px) {
+    width:70%;
+    .titreCatMenu {
+      h3 {
+        margin:auto;
+        text-align: center;
+      }
+    }
+  }
+  @media all and (max-width: 750px) {
+    width:85%;
+    .titreCatMenu {
+      margin-top:1rem;
+      h3 {
+        margin:auto;
+        text-align: center;
+      }
+      img {
+        display:none;
+      }
+    }
+    .ligne {
+      flex-direction: column;
     }
   }
 }

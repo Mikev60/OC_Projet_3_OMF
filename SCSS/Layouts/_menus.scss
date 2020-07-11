@@ -3,6 +3,7 @@
   @include menu($ftColorMenu1, $ftColorMenu1,$ftColorMenu1);
   background-color: $bckColorMenu1;
   margin-top:0;
+  padding-top:1rem;
   color: $ftColorMenu1;
   font-family: "contenuMenu", Arial, serif;
   .ligne {
@@ -16,6 +17,7 @@
   }
   .titreCatMenu {
     width: 80%;
+    text-align: center;
   }
   .footerMenu {
     display: flex;
@@ -90,9 +92,6 @@
   background-color: $bckColorMenu4;
   font-family: "contenuMenu", Arial, serif;
   font-size:0.9rem;
-  h2 {
-    font-style: italic;
-  }
   .ligne {
     width:75%;
   }

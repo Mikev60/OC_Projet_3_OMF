@@ -9,6 +9,7 @@
 @import "./Layouts/menus"; /* Affichage des menus dans menusX.html */
 @import "./Layouts/menuspreviews"; /* Affichage des previews de menus */
 @import "./Layouts/conteneurMenus"; /* Conteneurs des menus dans index.html */
+@import "./Layouts/responsive"; /* Import le design responsive */
 
 body{
   display:flex;

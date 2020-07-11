@@ -1,6 +1,6 @@
-- Reprendre aux soulignements dans le menu 2 (ajouter classes par paragraphe)
-- Ajuster les polices 
+
 - Image qui ne fonctionne pas sur github pages
+- Ajuster hauteur main selon les pages
 - Ajuster les couleurs
 - Création du responsive 
 - Contenu mentions légales
@@ -9,3 +9,6 @@
 - Créer le mixin des menus -- FAIT 10/07
 - Création des variables pour les couleurs -- FAIT 10/07
 - Ajuster les animations (image cliquable) -- FAIT 10/07
+- Reprendre aux soulignements dans le menu 2 (ajouter classes par paragraphe) -- FAIT 11/07
+- Ajuster les polices -- FAIT 11/07
+- Ajuster présentation titre OMF -- FAIT 11/07

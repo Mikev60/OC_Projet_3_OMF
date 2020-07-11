@@ -3,6 +3,10 @@
 /* Menu 2 */
 /* Menu 3 */
 /* Menu 4 */
+/* Police du titre OMF */
+@font-face {
+  font-family: "OMF";
+  src: url("../Polices/OMF.ttf"); }
 /* Contenu de tous les menus */
 @font-face {
   font-family: "contenuMenu";
@@ -11,18 +15,30 @@
 @font-face {
   font-family: "titreMenu1";
   src: url("../Polices/Menu1/titreMenu1.ttf"); }
+@font-face {
+  font-family: "menu1";
+  src: url("../Polices/Menu1/menu1.ttf"); }
 /* Polices du menu 2 */
 @font-face {
   font-family: "titreMenu2";
   src: url("../Polices/Menu2/titreMenu2.ttf"); }
+@font-face {
+  font-family: "menu2";
+  src: url("../Polices/Menu2/menu2.ttf"); }
 /* Polices du menu 3 */
 @font-face {
   font-family: "titreMenu3";
   src: url("../Polices/Menu3/titreMenu3.ttf"); }
+@font-face {
+  font-family: "menu3";
+  src: url("../Polices/Menu3/menu3.ttf"); }
 /* Polices du menu 4 */
 @font-face {
   font-family: "titreMenu4";
-  src: url("../Polices/Menu3/titreMenu3.ttf"); }
+  src: url("../Polices/Menu4/titreMenu4.ttf"); }
+@font-face {
+  font-family: "menu4";
+  src: url("../Polices/Menu4/menu4.ttf"); }
 /* Mixin gestion des previews des menus */
 /* Mixin des menus (dans leur page de présentation) */
 /* Animation prochainement dans index.html */
@@ -74,8 +90,11 @@
   width: 100%; }
   .header h1 {
     color: #fbc945;
-    font-size: 2rem;
-    text-align: center; }
+    font-size: 3rem;
+    text-align: center;
+    font-family: "OMF", Arial, serif;
+    margin-block-start: 0.5rem;
+    margin-block-end: 0.5rem; }
     .header h1 a {
       text-decoration: none;
       color: #fbc945; }
@@ -140,14 +159,15 @@
 /* ------- Gère affichage des menus dans leur page ------ */
 .menu1 {
   width: 50%;
-  padding: 1.5rem;
+  /*padding:1.5rem;*/
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  /*margin-top:2rem;*/
   background-color: #fcdfdb;
   margin-top: 0;
+  padding-top: 1rem;
   color: #3d1319;
   font-family: "contenuMenu", Arial, serif; }
   .menu1 h2 {
@@ -180,6 +200,24 @@
     .menu1 .titreCatMenu img {
       width: 35%;
       height: 9px; }
+  @media all and (max-width: 1500px) {
+    .menu1 {
+      width: 70%; }
+      .menu1 .titreCatMenu h3 {
+        margin: auto;
+        text-align: center; } }
+  @media all and (max-width: 750px) {
+    .menu1 {
+      width: 85%; }
+      .menu1 .titreCatMenu {
+        margin-top: 1rem; }
+        .menu1 .titreCatMenu h3 {
+          margin: auto;
+          text-align: center; }
+        .menu1 .titreCatMenu img {
+          display: none; }
+      .menu1 .ligne {
+        flex-direction: column; } }
   .menu1 .ligne {
     width: 85%; }
     .menu1 .ligne p {
@@ -187,7 +225,8 @@
     .menu1 .ligne h3 {
       font-size: 2rem; }
   .menu1 .titreCatMenu {
-    width: 80%; }
+    width: 80%;
+    text-align: center; }
   .menu1 .footerMenu {
     display: flex;
     align-items: center; }
@@ -205,12 +244,12 @@
 
 .menu2 {
   width: 50%;
-  padding: 1.5rem;
+  /*padding:1.5rem;*/
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  /*margin-top:2rem;*/
   background-color: #faf0f9; }
   .menu2 h2 {
     background: linear-gradient(to right, #e38a12 0%, #8e5afe 100%);
@@ -242,6 +281,24 @@
     .menu2 .titreCatMenu img {
       width: 35%;
       height: 9px; }
+  @media all and (max-width: 1500px) {
+    .menu2 {
+      width: 70%; }
+      .menu2 .titreCatMenu h3 {
+        margin: auto;
+        text-align: center; } }
+  @media all and (max-width: 750px) {
+    .menu2 {
+      width: 85%; }
+      .menu2 .titreCatMenu {
+        margin-top: 1rem; }
+        .menu2 .titreCatMenu h3 {
+          margin: auto;
+          text-align: center; }
+        .menu2 .titreCatMenu img {
+          display: none; }
+      .menu2 .ligne {
+        flex-direction: column; } }
   .menu2 h2 {
     font-family: "titreMenu2", Arial, serif; }
   .menu2 .titreCatMenu {
@@ -266,12 +323,12 @@
 
 .menu3 {
   width: 50%;
-  padding: 1.5rem;
+  /*padding:1.5rem;*/
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  /*margin-top:2rem;*/
   background-color: #edefef;
   color: black;
   font-family: "contenuMenu", Arial, serif; }
@@ -305,6 +362,24 @@
     .menu3 .titreCatMenu img {
       width: 35%;
       height: 9px; }
+  @media all and (max-width: 1500px) {
+    .menu3 {
+      width: 70%; }
+      .menu3 .titreCatMenu h3 {
+        margin: auto;
+        text-align: center; } }
+  @media all and (max-width: 750px) {
+    .menu3 {
+      width: 85%; }
+      .menu3 .titreCatMenu {
+        margin-top: 1rem; }
+        .menu3 .titreCatMenu h3 {
+          margin: auto;
+          text-align: center; }
+        .menu3 .titreCatMenu img {
+          display: none; }
+      .menu3 .ligne {
+        flex-direction: column; } }
   .menu3 h2 {
     font-family: "titreMenu3", Arial, serif;
     font-size: 4rem; }
@@ -314,12 +389,12 @@
 
 .menu4 {
   width: 50%;
-  padding: 1.5rem;
+  /*padding:1.5rem;*/
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  /*margin-top:2rem;*/
   background-color: #fdfffd;
   font-family: "contenuMenu", Arial, serif;
   font-size: 0.9rem; }
@@ -353,8 +428,24 @@
     .menu4 .titreCatMenu img {
       width: 35%;
       height: 9px; }
-  .menu4 h2 {
-    font-style: italic; }
+  @media all and (max-width: 1500px) {
+    .menu4 {
+      width: 70%; }
+      .menu4 .titreCatMenu h3 {
+        margin: auto;
+        text-align: center; } }
+  @media all and (max-width: 750px) {
+    .menu4 {
+      width: 85%; }
+      .menu4 .titreCatMenu {
+        margin-top: 1rem; }
+        .menu4 .titreCatMenu h3 {
+          margin: auto;
+          text-align: center; }
+        .menu4 .titreCatMenu img {
+          display: none; }
+      .menu4 .ligne {
+        flex-direction: column; } }
   .menu4 .ligne {
     width: 75%; }
   .menu4 .titreCatMenu {
@@ -394,11 +485,21 @@
     .menu1preview .menupreview__contenu .titre {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
+  @media all and (max-width: 1500px) {
+    .menu1preview {
+      width: 20%;
+      margin-bottom: 2rem; } }
+  @media all and (max-width: 750px) {
+    .menu1preview {
+      width: 63%;
+      margin-bottom: 2rem; } }
   .menu1preview .titreMenu1 {
     font-family: "titreMenu1", Arial, serif;
     color: #3d1319; }
   .menu1preview a {
-    color: #3d1319; }
+    color: #3d1319;
+    font-family: "menu1", Arial, serif;
+    font-style: italic; }
 
 .menu2preview {
   width: 22%;
@@ -431,9 +532,21 @@
     .menu2preview .menupreview__contenu .titre {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
+  @media all and (max-width: 1500px) {
+    .menu2preview {
+      width: 20%;
+      margin-bottom: 2rem; } }
+  @media all and (max-width: 750px) {
+    .menu2preview {
+      width: 63%;
+      margin-bottom: 2rem; } }
   .menu2preview .titre {
     background: linear-gradient(to right, #e38a12 0%, #8e5afe 100%);
-    font-family: "titreMenu2", Arial, serif; }
+    font-family: "titreMenu2", Arial, serif;
+    font-size: 1rem; }
+  .menu2preview a {
+    font-family: "menu2", Arial, serif;
+    font-size: 1.5rem; }
   .menu2preview .MenuMenu2 {
     color: #e38a12; }
 
@@ -469,10 +582,22 @@
     .menu3preview .menupreview__contenu .titre {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
+  @media all and (max-width: 1500px) {
+    .menu3preview {
+      width: 20%;
+      margin-bottom: 2rem; } }
+  @media all and (max-width: 750px) {
+    .menu3preview {
+      width: 63%;
+      margin-bottom: 2rem; } }
   .menu3preview .titre {
     background: linear-gradient(to right, #0127dc 0%, #0881ec 100%);
     font-family: "titreMenu3", Arial, serif;
     font-size: 1.7rem; }
+  .menu3preview a {
+    font-family: "menu3", Arial, serif;
+    font-style: italic;
+    font-size: 2rem; }
   .menu3preview .MenuMenu3 {
     color: #0881ec; }
 
@@ -507,10 +632,22 @@
     .menu4preview .menupreview__contenu .titre {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
+  @media all and (max-width: 1500px) {
+    .menu4preview {
+      width: 20%;
+      margin-bottom: 2rem; } }
+  @media all and (max-width: 750px) {
+    .menu4preview {
+      width: 63%;
+      margin-bottom: 2rem; } }
   .menu4preview .titre {
     background: linear-gradient(to right, #43973d 0%, #beff7f 100%);
     font-family: "titreMenu4", Arial, serif;
     font-size: 1.7rem; }
+  .menu4preview a {
+    font-family: "menu4", Arial, serif;
+    font-style: italic;
+    font-size: 2rem; }
   .menu4preview .MenuMenu4 {
     color: #43973d; }
 
@@ -542,19 +679,55 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    display: flex;
-    margin-bottom: 0; }
-  @media all and (max-width: 1000px) {
-    .conteneurMenu {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 0; }
-      .conteneurMenu a {
-        margin-bottom: 3rem;
-        display: block; } }
+    display: flex; }
+
+.noMarginMenu {
+  margin-bottom: 0; }
 
 /* Conteneurs des menus dans index.html */
+/* Reste du responsive (menus et previews) sont directement dans les mixins ! */
+@media all and (max-width: 1500px) {
+  .conteneurMenu {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem; }
+    .conteneurMenu a {
+      margin-bottom: 3rem;
+      display: block; }
+
+  .main {
+    width: 100%; } }
+@media all and (max-width: 750px) {
+  .conteneurMenu {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem; }
+    .conteneurMenu a {
+      margin-bottom: 3rem;
+      display: block; }
+    .conteneurMenu__prochainement {
+      width: 15rem;
+      height: 2.5rem;
+      font-size: 2.0rem;
+      line-height: 2.5rem;
+      border-radius: 0.4rem; }
+
+  .main {
+    width: 100%;
+    margin-top: 2rem; }
+
+  .menu1preview, .menu3preview {
+    margin-right: 0; }
+
+  .footer a {
+    font-size: 1.2rem; }
+
+  .menu1 .enTeteMenu1 {
+    font-size: 2rem; } }
+/* Import le design responsive */
 body {
   display: flex;
   flex-direction: column;

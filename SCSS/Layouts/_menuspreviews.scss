@@ -10,6 +10,8 @@
   }
   a {
     color:$ftColorMenu1;
+    font-family: "menu1", Arial, serif;
+    font-style: italic;
   }
 }
 .menu2preview {
@@ -18,6 +20,11 @@
   .titre {
     background: linear-gradient(to right, $Menu2Degrade1 0%,$Menu2Degrade2 100%);
     font-family: "titreMenu2", Arial, serif;
+    font-size: 1rem;
+  }
+  a {
+    font-family: "menu2", Arial, serif;
+    font-size: 1.5rem;
   }
   .MenuMenu2 {
     color: $Menu2Degrade1;
@@ -32,6 +39,11 @@
     font-family: "titreMenu3", Arial, serif;
     font-size:1.7rem;
   }
+  a {
+    font-family: "menu3", Arial, serif;
+    font-style: italic;
+    font-size: 2rem;
+  }
   .MenuMenu3 {
     color: $Menu3Degrade2;
   }
@@ -43,6 +55,11 @@
     background: linear-gradient(to right, $Menu4Degrade1 0%,$Menu4Degrade2 100%);
     font-family: "titreMenu4", Arial, serif;
     font-size:1.7rem;
+  }
+  a {
+    font-family: "menu4", Arial, serif;
+    font-style: italic;
+    font-size: 2rem;
   }
   .MenuMenu4 {
     color: $Menu4Degrade1;

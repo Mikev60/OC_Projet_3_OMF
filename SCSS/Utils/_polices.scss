@@ -1,3 +1,8 @@
+/* Police du titre OMF */
+@font-face {
+  font-family: "OMF";
+  src: url("../Polices/OMF.ttf");
+}
 /* Contenu de tous les menus */
 @font-face {
   font-family: "contenuMenu";
@@ -8,18 +13,34 @@
   font-family: "titreMenu1";
   src: url("../Polices/Menu1/titreMenu1.ttf");
 }
+@font-face {
+  font-family: "menu1";
+  src: url("../Polices/Menu1/menu1.ttf");
+}
 /* Polices du menu 2 */
 @font-face {
   font-family: "titreMenu2";
   src: url("../Polices/Menu2/titreMenu2.ttf");
+}
+@font-face {
+  font-family: "menu2";
+  src: url("../Polices/Menu2/menu2.ttf");
 }
 /* Polices du menu 3 */
 @font-face {
   font-family: "titreMenu3";
   src: url("../Polices/Menu3/titreMenu3.ttf");
 }
+@font-face {
+  font-family: "menu3";
+  src: url("../Polices/Menu3/menu3.ttf");
+}
 /* Polices du menu 4 */
 @font-face {
   font-family: "titreMenu4";
-  src: url("../Polices/Menu3/titreMenu3.ttf");
+  src: url("../Polices/Menu4/titreMenu4.ttf");
+}
+@font-face {
+  font-family: "menu4";
+  src: url("../Polices/Menu4/menu4.ttf");
 }
