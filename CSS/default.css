@@ -93,8 +93,8 @@
     font-size: 3rem;
     text-align: center;
     font-family: "OMF", Arial, serif;
-    margin-block-start: 0.5rem;
-    margin-block-end: 0.5rem; }
+    height: 2.5rem;
+    line-height: 2.5rem; }
     .header h1 a {
       text-decoration: none;
       color: #fbc945; }
