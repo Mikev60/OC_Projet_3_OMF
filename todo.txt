@@ -1,5 +1,4 @@
-- Image qui ne fonctionne pas sur github pages
-
+- Validation W3C
 
 - Contenu menu 4 -- FAIT 09/07
 - Créer le mixin des menus -- FAIT 10/07
@@ -12,3 +11,4 @@
 - Création du responsive -- FAIT 11/07
 - Contenu mentions légales -- FAIT 11/07
 - Mettre liens mentions légales et contactez aux extrémités -- FAIT 11/07
+- Image qui ne fonctionne pas sur github pages -- FAIT 11/07
