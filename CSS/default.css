@@ -111,6 +111,7 @@
   padding-left: 0.5rem;
   box-sizing: border-box;
   position: sticky;
+  position: -ms-sticky;
   bottom: 0; }
   .footer a {
     color: #fbc945;
@@ -396,6 +397,8 @@
       .menu3 .ligne {
         flex-direction: column; } }
   .menu3 h2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-family: "titreMenu3", Arial, serif;
     font-size: 4rem; }
   .menu3 .titreCatMenu {
@@ -542,6 +545,7 @@
 /* Gère les aperçus des menus dans index.html */
 .menu1preview {
   width: 22%;
+  min-width: 260px;
   height: 20rem;
   box-shadow: 0 0 1em grey;
   display: flex;
@@ -570,15 +574,17 @@
     .menu1preview .menupreview__contenu:hover {
       transform: scale(1.2); }
     .menu1preview .menupreview__contenu .titre {
+      padding-left: 1rem;
+      padding-right: 1rem;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-  @media all and (max-width: 1500px) {
+  @media all and (max-width: 1600px) {
     .menu1preview {
-      width: 20%;
+      width: 30%;
       margin-bottom: 2rem; } }
   @media all and (max-width: 750px) {
     .menu1preview {
-      width: 63%;
+      width: 50%;
       margin-bottom: 2rem; } }
   .menu1preview .titreMenu1 {
     font-family: "titreMenu1", Arial, serif;
@@ -590,6 +596,7 @@
 
 .menu2preview {
   width: 22%;
+  min-width: 260px;
   height: 20rem;
   box-shadow: 0 0 1em grey;
   display: flex;
@@ -617,15 +624,17 @@
     .menu2preview .menupreview__contenu:hover {
       transform: scale(1.2); }
     .menu2preview .menupreview__contenu .titre {
+      padding-left: 1rem;
+      padding-right: 1rem;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-  @media all and (max-width: 1500px) {
+  @media all and (max-width: 1600px) {
     .menu2preview {
-      width: 20%;
+      width: 30%;
       margin-bottom: 2rem; } }
   @media all and (max-width: 750px) {
     .menu2preview {
-      width: 63%;
+      width: 50%;
       margin-bottom: 2rem; } }
   .menu2preview .titre {
     background: linear-gradient(to right, #e38a12 0%, #8e5afe 100%);
@@ -639,6 +648,7 @@
 
 .menu3preview {
   width: 22%;
+  min-width: 260px;
   height: 20rem;
   box-shadow: 0 0 1em grey;
   display: flex;
@@ -667,15 +677,17 @@
     .menu3preview .menupreview__contenu:hover {
       transform: scale(1.2); }
     .menu3preview .menupreview__contenu .titre {
+      padding-left: 1rem;
+      padding-right: 1rem;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-  @media all and (max-width: 1500px) {
+  @media all and (max-width: 1600px) {
     .menu3preview {
-      width: 20%;
+      width: 30%;
       margin-bottom: 2rem; } }
   @media all and (max-width: 750px) {
     .menu3preview {
-      width: 63%;
+      width: 50%;
       margin-bottom: 2rem; } }
   .menu3preview .titre {
     background: linear-gradient(to right, #0127dc 0%, #0881ec 100%);
@@ -690,6 +702,7 @@
 
 .menu4preview {
   width: 22%;
+  min-width: 260px;
   height: 20rem;
   box-shadow: 0 0 1em grey;
   display: flex;
@@ -717,15 +730,17 @@
     .menu4preview .menupreview__contenu:hover {
       transform: scale(1.2); }
     .menu4preview .menupreview__contenu .titre {
+      padding-left: 1rem;
+      padding-right: 1rem;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-  @media all and (max-width: 1500px) {
+  @media all and (max-width: 1600px) {
     .menu4preview {
-      width: 20%;
+      width: 30%;
       margin-bottom: 2rem; } }
   @media all and (max-width: 750px) {
     .menu4preview {
-      width: 63%;
+      width: 50%;
       margin-bottom: 2rem; } }
   .menu4preview .titre {
     background: linear-gradient(to right, #43973d 0%, #beff7f 100%);
@@ -773,9 +788,9 @@
 
 /* Conteneurs des menus dans index.html */
 /* Reste du responsive (menus et previews) sont directement dans les mixins ! */
-@media all and (max-width: 1500px) {
+@media all and (max-width: 1600px) {
   .conteneurMenu {
-    width: 100%;
+    width: 70%;
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem; }
